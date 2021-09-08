@@ -2,7 +2,7 @@
 
 SERVICENAME="$TRAVIS"
 
-systemctl is-active --quiet $SERVICENAME
+systemctl is-active --quiet $TRAVIS
 STATUS=$? # Return value is 0 if running
 
 if [[ "$STATUS" -ne "0" ]]; then
